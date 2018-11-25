@@ -1,0 +1,32 @@
+#columns {
+  /* transform: translateX(20%); */
+  width: 90%;
+  column-width: 320px;
+  column-gap: 15px;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+#columns figure {
+  display: inline-block;
+  border: 1px solid rgba(0,0,0,0.2);
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  transition: opacity .4s ease-in-out;
+}
+
+#columns figure img {
+  width: 100%;
+}
+
+#columns figure figcaption {
+  border-top: 1px solid rgba(0,0,0,0.2);
+  padding: 10px;
+  margin-top: 11px;
+}
+
+#columns:hover figure:not(:hover) {
+	opacity: 0.4;
+}
